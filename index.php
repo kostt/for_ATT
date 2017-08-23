@@ -89,11 +89,11 @@ $result = mysqli_query($link, $query); //Обрабатываем запрос
 $r = mysqli_fetch_array($result); //Выводим данные
 
 /**
-*@var array $matches массив Убираем лишние символы
+*@var array $matches массив (Убираем лишние символы)
 */
 preg_match("/^enum\(\'(.*)\'\)$/", $r['Type'], $matches);
 /**
-*@var array $array массив данныхразбиваем по ',' и заносим в массив
+*@var array $array массив данных (разбиваем по ',' и заносим в массив)
 */
 $array = explode("','", $matches[1]);
 
