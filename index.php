@@ -32,7 +32,7 @@ final class myTest
    */	
 
 	  function __construct() {
-	  	//$this->install();
+	  	$this->install();
 	  	$this->fill();
    }
 
